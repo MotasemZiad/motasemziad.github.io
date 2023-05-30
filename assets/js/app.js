@@ -200,3 +200,37 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+// Send Email using EmailJS Library
+const serviceId = "service_9x6za37",
+  templateId = "template_g5ukid5";
+
+function sendEmail() {
+  var params = {
+    name: document.getElementById("name").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    project: document.getElementById("project").value.trim(),
+    message: document.getElementById("message").value.trim(),
+  };
+
+  if (
+    params.name != "" &&
+    params.email != "" &&
+    params.project != "" &&
+    params.message != ""
+  ) {
+    emailjs
+      .send(serviceId, templateId, params)
+      .then((res) => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("project").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message has been sent successfully!");
+      })
+      .catch((error) => console.log(`Error...! ${error.message}`));
+  } else {
+    alert("Please, fill fields");
+  }
+}
