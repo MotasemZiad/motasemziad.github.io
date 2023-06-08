@@ -32,5 +32,6 @@ https://motasemziad.github.io
 4. [Remove Background](https://remove.bg): Thanks to remove.bg's clever AI, you can slash editing time - and have more fun!
 5. [Blob Generator](https://www.blobmaker.app/): Generate unique SVG design assets.
 6. [HSL, HSLA Colors](https://w3schools.com/colors/colors_hsl.asp): Hue, Saturation, and Lightness of colors.
+7. [EmailJS](https://www.emailjs.com/): Send Email Directly From Your Code. No server code needed. Focus on things that matter!
 
 ### 💙 Credit to [Bedimcode](https://www.youtube.com/c/Bedimcode)
