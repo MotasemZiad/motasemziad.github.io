@@ -45,8 +45,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
       (function () {
         emailjs.init("VlMnTmNXEQDleJrf5");
       })();
@@ -148,7 +151,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
               >
-                <mask id="mask0">
+                <mask id="mask0" mask-type="alpha">
                   <path
                     d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
@@ -165,8 +168,6 @@
                   />
                   <image
                     class="home__blob-img"
-                    width="250px"
-                    height="280px"
                     x="-55"
                     y="0"
                     href="./assets/images/perfil.png"
@@ -175,7 +176,7 @@
               </svg>
             </div>
             <div class="home__data">
-              <h2 class="home__title">Hi, I'm Motasem</h2>
+              <h1 class="home__title">Hi, I'm Motasem</h1>
               <h3 class="home_subtitle">Software Developer</h3>
               <p class="home__description">
                 High level experience in web design and development knowledge,
@@ -262,7 +263,7 @@
               <div class="skills__header">
                 <i class="uil uil-brackets-curly skills__icon"></i>
                 <div>
-                  <h3 class="skills__title">Frontend Developer</h3>
+                  <h1 class="skills__title">Frontend Developer</h1>
                   <span class="skills__subtitle">More than 4 years</span>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -311,7 +312,7 @@
               <div class="skills__header">
                 <i class="uil uil-server-network skills__icon"></i>
                 <div>
-                  <h3 class="skills__title">Backend Developer</h3>
+                  <h1 class="skills__title">Backend Developer</h1>
                   <span class="skills__subtitle">More than 2 years</span>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -362,7 +363,7 @@
               <div class="skills__header">
                 <i class="uil uil-mobile-android skills__icon"></i>
                 <div>
-                  <h3 class="skills__title">Mobile Apps Developer</h3>
+                  <h1 class="skills__title">Mobile Apps Developer</h1>
                   <span class="skills__subtitle">More than 4 years</span>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -1047,11 +1048,7 @@
             </div>
           </div>
 
-          <form
-            action="https://getform.io/f/b3682db1-243b-4289-a5d9-bfe5afe01933"
-            method="post"
-            class="contact__form grid"
-          >
+          <form action="" class="contact__form grid">
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="name" class="contact__label">Name</label>
@@ -1088,7 +1085,7 @@
               <label for="message" class="contact__label">Message</label>
               <textarea
                 required
-                cols="7"
+                cols="0"
                 rows="7"
                 class="contact__input"
                 id="message"
@@ -1096,16 +1093,14 @@
               ></textarea>
             </div>
             <div>
-              <button type="submit">
-                <a
-                  href="#contact"
-                  class="button button--flex"
-                  onclick="sendEmail()"
-                >
-                  Send a message
-                  <i class="uil uil-message button__icon"></i>
-                </a>
-              </button>
+              <a
+                href="#contact"
+                class="button button--flex"
+                onclick="sendEmail()"
+              >
+                Send a message
+                <i class="uil uil-message button__icon"></i>
+              </a>
             </div>
           </form>
         </div>
